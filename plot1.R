@@ -20,6 +20,7 @@ colnames(rn) <- c("Date","Time","Global_active_power","Global_reactive_power",
                   "sub_metering_2","sub_metering_3")
 rn[,3] <- as.character(rn[,3])
 rn[,3] <- as.numeric(rn[,3])
+par(mar=c(4,4,4,2))
 hist(rn[,3],main="Global Active Power",xlab="Global Active Power(kilowatts)",
      col="red")
 dev.copy(png,"plot1.png",width=480,height=480)
