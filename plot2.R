@@ -23,8 +23,8 @@ r2 <- rn[,2]
 rt <- paste(r1,r2)
 rtt <- strptime(rt,"%Y-%m-%d %T")
 r3 <- as.numeric(as.character(rn[,3]))
-par(mar=c(4,4,4,2))
-plot(rtt,r3,type="l",ylab="Global Active Power(kilowatts)",xlab="")
+par(mar=c(5,4,4,2))
+plot(rtt,r3,type="l",ylab="Global Active Power(kilowatts)",xlab="",cex.lab=0.8)
 dev.copy(png,"plot2.png",width=480,height=480)
 dev.off()
 

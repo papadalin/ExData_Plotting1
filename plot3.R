@@ -26,7 +26,7 @@ r7 <- as.numeric(as.character(rn[,7]))
 r8 <- as.numeric(as.character(rn[,8]))
 r9 <- as.numeric(as.character(rn[,9]))
 par(mar=c(4,4,4,2),mfrow=c(1,1))
-plot(rtt,r7,type="l",ylab="Energy sub metering",xlab="")
+plot(rtt,r7,type="l",ylab="Energy sub metering",xlab="",cex.lab=0.8,cex.main=0.8)
 lines(rtt,r8,type="l",col="red")
 lines(rtt,r9,type="l",col="blue")
 legend("topright",legend=c("sub_metering_1","sub_metering_2","sub_metering_3"),
